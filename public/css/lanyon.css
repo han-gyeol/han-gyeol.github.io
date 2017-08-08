@@ -262,13 +262,11 @@ a.sidebar-nav-item:focus {
 }
 
 .sidebar-icons {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 .sidebar-icon {
-  margin: 0.1rem
+  margin: 0.3rem
 }
 
 /* Slide effect
