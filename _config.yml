@@ -1,0 +1,21 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+
+# Setup
+title:               Hangry blog
+tagline:             ''
+description:         'NUS SOC Computer Science. Web Developer. Freelancer. Machine Learning Enthusiast. Learner. Practitioner. Coder'
+url:                 https://han-gyeol.github.io
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              HanGyeol Oh
+  url:               https://github.com/han-gyeol
+  email:             Leook0209@gmail.com
+
+# Custom vars
+version:             1.0.0

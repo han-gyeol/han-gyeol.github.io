@@ -1,0 +1,24 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>{{ site.description }}</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+    <a class="sidebar-nav-item" href="{{ site.baseurl }}/about">About</a>
+    <a class="sidebar-nav-item" href="https://github.com/han-gyeol">GitHub</a>
+    <a class="sidebar-nav-item" href="https://www.linkedin.com/in/han-gyeol-oh-21424112a/">Linkedin</a>
+    <a class="sidebar-nav-item" href="{{ site.baseurl }}/atom.xml">RSS</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+    </p>
+  </div>
+</div>
