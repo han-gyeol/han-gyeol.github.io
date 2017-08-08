@@ -268,8 +268,10 @@ a.sidebar-nav-item:focus {
 
 .sidebar-icon {
   margin: 0.3rem;
-  padding-bottom: 0.1rem;
-  /*text-decoration: none;*/
+}
+
+.sidebar-icon:hover {
+  text-decoration: none;
 }
 
 /* Slide effect
