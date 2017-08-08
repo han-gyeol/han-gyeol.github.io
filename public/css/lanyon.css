@@ -261,6 +261,16 @@ a.sidebar-nav-item:focus {
   }
 }
 
+.sidebar-icons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar-icon {
+  margin: 0.1rem
+}
+
 /* Slide effect
  *
  * Handle the sliding effects of the sidebar and content in one spot, seperate
