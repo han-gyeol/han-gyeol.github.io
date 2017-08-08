@@ -263,10 +263,12 @@ a.sidebar-nav-item:focus {
 
 .sidebar-icons {
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 .sidebar-icon {
-  margin: 0.3rem
+  margin: 0.3rem;
+  padding: 0.1rem;
 }
 
 /* Slide effect
