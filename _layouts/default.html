@@ -4,6 +4,12 @@
   {% include head.html %}
 
   <body class="theme-base-0c sidebar-overlay">
+    <script>
+    console.log(site);
+    console.log(page);
+    console.log({{site}});
+    console.log({{page}});
+    </script>
 
     {% include sidebar.html %}
 
@@ -28,10 +34,6 @@
 
     <script>
       (function(document) {
-        console.log(site);
-        console.log(page);
-        console.log({{site}});
-        console.log({{page}});
         var toggle = document.querySelector('.sidebar-toggle');
         var sidebar = document.querySelector('#sidebar');
         var checkbox = document.querySelector('#sidebar-checkbox');
