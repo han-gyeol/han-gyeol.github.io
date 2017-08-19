@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'GSoC 2017: Phase 1 Evaluation'
+comments: true
 ---
 
 In the first month of the project, I have attempted following tasks:
@@ -61,5 +62,3 @@ Furthermore, when I tested sending a local video(mp4) from the main window to th
 # Conclusion
 
 Although the video transmission appears to be working, there are numerous internal problems I have to resolve before I move on to the next step. A lot of time is consumed for researching possible methods to implement the features, and only a fraction of time is used for the actual code writing. I used to only look up StackOverFlow for my programming problems, but for this project I had to read on many official API documentations, issue & bug trackers, and discussion threads. This is because the problems I used to solve were a kind that had one simple solution which worked cleanly. But for the Jitsi-meet-electron project, there are many different approaches I can take to solve the same problem, and in worst case scenario, the problem is actually unsolvable / not supported.
-
-

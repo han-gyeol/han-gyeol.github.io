@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'GSoC 2017: Phase 2 Evaluation'
+comments: true
 ---
 
 By the end of Phase 2, I have completed following tasks:

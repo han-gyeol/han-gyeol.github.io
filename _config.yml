@@ -12,6 +12,7 @@ baseurl:             ''
 paginate:            5
 disqusid:            hangyeoloh
 
+
 # About/contact
 author:
   name:              HanGyeol Oh
