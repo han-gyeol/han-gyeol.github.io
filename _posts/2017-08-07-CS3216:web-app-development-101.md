@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'CS3216: Web App Development 101'
+comments: true
 ---
 
 ![cover]({{ site.url }}/{{ site.baseurl }}/images/2017-08-07-CS3216:web-app-development-101/cover.png){:.center-image}

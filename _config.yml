@@ -10,7 +10,6 @@ description:         'NUS SOC Computer Science. Web Developer. Freelancer. Machi
 url:                 https://han-gyeol.github.io
 baseurl:             ''
 paginate:            5
-comments:            true
 
 # About/contact
 author:
