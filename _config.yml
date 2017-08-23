@@ -11,6 +11,8 @@ url:                 https://han-gyeol.github.io
 baseurl:             ''
 paginate:            5
 disqusid:            hangyeoloh
+tage_page:           /tags
+category_page:       /categories
 
 
 # About/contact
