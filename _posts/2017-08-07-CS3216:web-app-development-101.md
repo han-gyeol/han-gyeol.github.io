@@ -2,6 +2,8 @@
 layout: post
 title: 'CS3216: Web App Development 101'
 comments: true
+category: School
+tags: [CS3216, Web Application]
 ---
 
 ![cover]({{ site.url }}/{{ site.baseurl }}/images/2017-08-07-CS3216:web-app-development-101/cover.png){:.center-image}

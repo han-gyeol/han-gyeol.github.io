@@ -2,6 +2,8 @@
 layout: post
 title: 'GSoC 2017: Phase 1 Evaluation'
 comments: true
+category: GSoC
+tags: [Jitsi, GSoC, WebRTC]
 ---
 
 In the first month of the project, I have attempted following tasks:

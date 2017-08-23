@@ -2,6 +2,8 @@
 layout: post
 title: 'GSoC 2017: Phase 2 Evaluation'
 comments: true
+category: GSoC
+tags: [Jitsi, GSoC, WebRTC]
 ---
 
 By the end of Phase 2, I have completed following tasks:

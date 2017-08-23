@@ -2,6 +2,8 @@
 layout: post
 title: 'Game AI: Snake Game'
 comments: true
+category: Fun
+tags: [Genetic Algorithm, Game AI]
 ---
 
 ![snake]({{ site.url }}/{{ site.baseurl }}/images/2017-07-08-Game-AI:Snake-Game/snake.gif){: .center-image}
