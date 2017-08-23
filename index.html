@@ -13,6 +13,11 @@ title: Home
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
+    {% if page.tags %} |
+    {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+    {% endfor %}
+    {% endif %}
 
     {{ post.content }}
     <br>
