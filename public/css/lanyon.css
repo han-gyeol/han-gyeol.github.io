@@ -575,8 +575,21 @@ a.pagination-item:hover {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
 
-.center-image
-{
+.center-image {
   margin: 0 auto;
   display: block;
+}
+
+.post-tag {
+    margin: .5rem;
+}
+
+.post-tag:before {
+    content: "\f02b";
+    font-family: FontAwesome;
+    padding-right: .5em;
+}
+
+.tags-expo-posts {
+   list-style-type: none;
 }
