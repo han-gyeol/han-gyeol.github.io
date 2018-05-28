@@ -32,7 +32,7 @@ In short,
 
 Google Cloud Vision API provides labels for items appeared in the image together with the probability and topicality values. Probability value indicates how accurate the given label is to each item, and topicality value indicates the significance of the item with respect to the rest of the items inside the image.
 
-![gcv]({{ site.url }}/{{ site.baseurl }}/images/2017-09-05-CS3216:Assignment2-App-critique/gcv.png){:.center-image}
+![gcv]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/gcv.png){:.center-image}
 
 After running the Image Labelling API through each image, I have a list of item labels and their respective probability and topicality vales which are float numbers in between 0 and 1. These two values are used in the next step for weighting image vectorization using word embedding.
 
@@ -45,27 +45,27 @@ Using the item labels for each image, the algorithm then imports pretrained Glov
 
 Once all images are converted to vectors, the algorithm applies K-Means algorithm to cluster images with similar characteristic, which is bascially the type of items it contains inside.
 
-![figure]({{ site.url }}/{{ site.baseurl }}/images/2017-09-05-CS3216:Assignment2-App-critique/figure.png){:.center-image}
+![figure]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/figure.png){:.center-image}
 
 The figure above is the visualization of the image vector space whose dimension reduced to 3, using Principle Component Analysis (PCA). The data points with the same color indicate that they belong to the same image category. In order to know what each image category represent, the programme finds the centroid vector for each image cateogry and look up the Word2Vec model to list words with the closest distance.
 
-![center]({{ site.url }}/{{ site.baseurl }}/images/2017-09-05-CS3216:Assignment2-App-critique/center.png){:.center-image}
+![center]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/center.png){:.center-image}
 
 As shown by the print message, it is pretty obvious that cateogry 1 contains images related to food, while category 7 contains images related to clothings and fashion. Initially, the dataset contains uncategorized images scraped from Instagram such as these,
 
-![raw]({{ site.url }}/{{ site.baseurl }}/images/2017-09-05-CS3216:Assignment2-App-critique/raw.png){:.center-image}
+![raw]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/raw.png){:.center-image}
 
 and classify them into arbiturally genrated categories such as food,
 
-![category1]({{ site.url }}/{{ site.baseurl }}/images/2017-09-05-CS3216:Assignment2-App-critique/category1.png){:.center-image}
+![category1]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/category1.png){:.center-image}
 
 products,
 
-![category2]({{ site.url }}/{{ site.baseurl }}/images/2017-09-05-CS3216:Assignment2-App-critique/category2.png){:.center-image}
+![category2]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/category2.png){:.center-image}
 
 and travel.
 
-![category3]({{ site.url }}/{{ site.baseurl }}/images/2017-09-05-CS3216:Assignment2-App-critique/category3.png){:.center-image}
+![category3]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/category3.png){:.center-image}
 
 
 # Summary
