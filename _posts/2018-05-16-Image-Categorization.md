@@ -6,7 +6,7 @@ category: School
 tags: [CS3216, Web Application]
 ---
 
-![cover]({{ site.url }}/{{ site.baseurl }}/images/2017-09-05-CS3216:Assignment2-App-critique/cover.jpeg){:.center-image}
+![cover]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/cover.jpeg){:.center-image}
 
 Social media is flooded with various categories of photos: food, travel, selfie, etc. Unless the user explicitly mentions, the category of the photos uploaded is left unknown. For the purpose of creating meaningful value from the social media photos, it might be useful to have a scalable model to classify which category each photo belongs to.
 
