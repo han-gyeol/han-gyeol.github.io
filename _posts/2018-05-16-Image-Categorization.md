@@ -3,7 +3,7 @@ layout: post
 title: 'Unsupervized Image Cateogorization using Word Embedding'
 comments: true
 category: School
-tags: [CS3216, Web Application]
+tags: [Machine Learning, Computer Vision, Word Embedding]
 ---
 
 ![cover]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/cover.jpeg){:.center-image}
@@ -25,7 +25,6 @@ The unsupervized image categorization takes a couple of data processing steps:
 2. Vectorization of images using Word2Vec
 3. Clustering the image vectors by K-Means algorithm
 
-In short,
 
 
 ## 1. Image item labelling using Google Cloud Vision API
@@ -33,6 +32,7 @@ In short,
 Google Cloud Vision API provides labels for items appeared in the image together with the probability and topicality values. Probability value indicates how accurate the given label is to each item, and topicality value indicates the significance of the item with respect to the rest of the items inside the image.
 
 ![gcv]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/gcv.png){:.center-image}
+
 
 After running the Image Labelling API through each image, I have a list of item labels and their respective probability and topicality vales which are float numbers in between 0 and 1. These two values are used in the next step for weighting image vectorization using word embedding.
 
@@ -47,21 +47,26 @@ Once all images are converted to vectors, the algorithm applies K-Means algorith
 
 ![figure]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/figure.png){:.center-image}
 
+
 The figure above is the visualization of the image vector space whose dimension reduced to 3, using Principle Component Analysis (PCA). The data points with the same color indicate that they belong to the same image category. In order to know what each image category represent, the programme finds the centroid vector for each image cateogry and look up the Word2Vec model to list words with the closest distance.
 
 ![center]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/center.png){:.center-image}
+
 
 As shown by the print message, it is pretty obvious that cateogry 1 contains images related to food, while category 7 contains images related to clothings and fashion. Initially, the dataset contains uncategorized images scraped from Instagram such as these,
 
 ![raw]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/raw.png){:.center-image}
 
+
 and classify them into arbiturally genrated categories such as food,
 
 ![category1]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/category1.png){:.center-image}
 
+
 products,
 
 ![category2]({{ site.url }}/{{ site.baseurl }}/images/2018-05-16-Image-Categorization/category2.png){:.center-image}
+
 
 and travel.
 
